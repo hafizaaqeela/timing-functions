@@ -1,0 +1,50 @@
+/* div{
+    height: 150px;
+    width: 200px;
+    background-color: hotpink;
+    font-weight: 900px;
+    text-transform: capitalize;
+    position: relative;
+    animation: timing 5s infinite;
+}
+div:hover{
+    background-color: rgb(63, 163, 163);
+}
+.linear{
+    animation-timing-function: linear;
+}
+.ease{
+    animation-timing-function: ease;
+}
+.ease-in{
+    animation-timing-function: ease-in;
+}
+.ease-out{
+    animation-timing-function: ease-out;
+}
+.ease-in-out{
+    animation-timing-function: ease-in-out;
+}
+@keyframes timing {
+    from {left: 0;}
+    to { left: 300px;}
+} */
+div{
+    width: 200px;
+    height: 200px ;
+    background-color: indianred;
+    position: relative;
+    animation-name: box;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes box{
+    0%{ background-color: darkblue; left: 0px; top: 0px;}
+    25%{ background-color: darkgreen; left: 200px; top: 0px;}
+    50% { background-color: darkorchid; left: 200px; top: 200px;}
+    75% { background-color: lightseagreen; left: 0; top: 200px;}
+    100% { background-color: peru; left: 0; top: 0;}
+}
